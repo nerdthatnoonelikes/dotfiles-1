@@ -1,0 +1,32 @@
+font:
+   normal:
+      family: misc termsyn
+      style: Regular
+
+   bold:
+      family: misc termsyn
+      style: Bold
+
+   Italic:
+      family: misc termsyn
+      style: italic
+
+   bold_italic:
+      family: misc termsyn
+      style: bold_italic
+        
+   size: 10
+
+
+window:
+
+   padding:
+        x: 20
+        y: 20
+
+
+colors:
+
+   primary:
+      background: '#FEFEFE'
+      foreground: '#7A5143'
