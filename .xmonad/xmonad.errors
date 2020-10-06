@@ -1,0 +1,14 @@
+
+xmonad.hs:196:16: warning: [-Wdeprecations]
+    In the use of ‘spacing’ (imported from XMonad.Layout.Spacing):
+    Deprecated: "Use spacingRaw instead."
+    |
+196 |      tiled   = spacing 5 $ Tall nmaster delta ratio
+    |                ^^^^^^^
+
+xmonad.hs:237:44: warning: [-Wtabs]
+    Tab character found here, and in four further locations.
+    Please use spaces instead.
+    |
+237 | myEventHook = mconcat [ fullscreenEventHook                     
+    |                                            ^^^^^
