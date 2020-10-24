@@ -8,8 +8,8 @@ so you will likely need to change around a few things.<br>
 
 
 ### packages. <br>
-Gentoo <br> `emerge -a nitrogen alacritty termsyn polybar bspwm picom rofi` <br> <br>
-Arch <br> `yay -S nitrogen alacritty misc-termsyn polybar bspwm picom rofi`
+Gentoo <br> `emerge -a nitrogen alacritty termsyn polybar xmonad xmonad-contrib picom dmenu` <br> <br>
+Arch <br> `yay -S nitrogen alacritty misc-termsyn polybar xmonad xmonad-contrib picom dmenu`
 </div>
 
 
