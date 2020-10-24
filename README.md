@@ -1,7 +1,7 @@
 <div align="center">
   <h1>my dots.</h1>
 These are my dotfiles on my current system, that i use
-<img src="https://i.imgur.com/IbHiQYc.png">
+<img src="currentrice.png">
 	<h3>replicating</h3>
 Due to me being lazy some are defined as absolute paths,
 so you will likely need to change around a few things.<br>
