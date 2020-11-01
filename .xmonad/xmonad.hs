@@ -26,7 +26,8 @@ import qualified Data.Map        as M
 -- The preferred terminal program, which is used in a binding below and by
 -- certain contrib modules.
 --
-myTerminal      = "st"
+myTerminal      = "alacritty"
+
 
 -- Whether focus follows the mouse pointer.
 myFocusFollowsMouse :: Bool
@@ -134,6 +135,16 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     -- Restart xmonad
     , ((modm              , xK_q     ), spawn "xmonad --recompile; xmonad --restart")
 
+    -- Start Chrome
+	, ((modm .|. shiftMask, xK_f     ), spawn "google-chrome-stable")
+
+    -- Start Spotify 
+    , ((modm .|. shiftMask, xK_g     ), spawn "spotify")
+
+	-- Take a screenshot
+	, ((modm .|. shiftMask, xK_p	 ), spawn "flameshot gui")  
+	
+
     -- Run xmessage with a summary of the default keybindings (useful for beginners)
     , ((modm .|. shiftMask, xK_slash ), spawn ("echo \"" ++ help ++ "\" | xmessage -file -"))
     ]
@@ -221,7 +232,6 @@ myLayout = avoidStruts (tiled ||| Mirror tiled ||| Full)
 --
 myManageHook = composeAll
     [ className =? "MPlayer"        --> doFloat
-    , className =? "Gimp"           --> doFloat
     , resource  =? "desktop_window" --> doIgnore
     , resource  =? "kdesktop"       --> doIgnore ]
 
@@ -263,6 +273,8 @@ myStartupHook = do
 
 -- Run xmonad with the settings you specify. No need to modify this.
 --
+
+
 main = xmonad $ docks defaults
 
 -- A structure containing your configuration settings, overriding
