@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =2
+let g:netrw_dirhist_2='/home/tempora/devel'
+let g:netrw_dirhist_1='/home/tempora/devel/cpp'
+let g:netrw_dirhist_0='/home/tempora/devel'
+let g:netrw_dirhist_9='/home/tempora'
+let g:netrw_dirhist_8='/home/tempora/.config'
+let g:netrw_dirhist_7='/home/tempora/.config/nvim'
+let g:netrw_dirhist_6='/home/tempora/devel/cpp'
+let g:netrw_dirhist_5='/home/tempora/devel/asm'
+let g:netrw_dirhist_4='/home/tempora/devel'
+let g:netrw_dirhist_3='/home/tempora/devel/opengl'
