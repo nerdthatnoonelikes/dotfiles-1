@@ -22,12 +22,14 @@ padding-left = 2
 background = #282828
 foreground = #edbbb2
 
-font-0 = Misc Termsyn:pixelsize=10;1
+bottom = false
+
+font-0 = tewi:pixelsize=10;1
 font-1 = FontAwesome:pixelsize=10;1
 
 separator = "  |  "
-modules-left =
-modules-center =  
+modules-left = mpd
+modules-center =
 modules-right = cpu pulseaudio date
 
 scroll-up = i3wm-wsnext
@@ -65,8 +67,16 @@ label-foreground = #ebdbb2
 
 format = <label>
 
-label = CPU %percentage%%
+label =𝅘𝅥CPU %percentage%%
 
+
+[module/memory]
+type = internal/memory
+
+label-foreground = #ebdbb2
+interval = 3
+label = RAM %gb_used% / %gb_total%
+format = <label>
 
 [module/date]
 type = internal/date
@@ -116,7 +126,7 @@ format-volume = <label-volume>
 label-volume = vol %percentage%%
 label-volume-foreground = #ebdbb2
 
-label-muted = 🔇 muted
+label-muted = muted
 label-muted-foreground = #666
 
 bar-volume-width = 10
@@ -166,10 +176,12 @@ interval = 1
 ;   <icon-next>
 ;   <icon-seekb>
 ;   <icon-seekf>
-format-online = <label-song>
+format-online = ♫  <label-song>  <label-time>
 ;format-playing = ${self.format-online}
 ;format-paused = ${self.format-online}
 ;format-stopped = ${self.format-online}
+
+foreground = #ebdbb2
 
 ; Available tags:
 ;   <label-offline>
@@ -183,13 +195,16 @@ format-online = <label-song>
 ;   %date%
 ;   %title%
 ; Default: %artist% - %title%
-label-song = Now Playing: %artist% - %title%
+label-song = %artist% - %title%
+
+label-song-foreground = #ebdbb2
 
 ; Available tokens:
 ;   %elapsed%
 ;   %total%
 ; Default: %elapsed% / %total%
-;label-time = %elapsed% / %total%
+label-time = %elapsed% / %total%
+label-time-foreground = #ebdbb2
 
 ; Available tokens:
 ;   None

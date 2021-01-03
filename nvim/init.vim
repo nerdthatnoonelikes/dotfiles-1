@@ -1,12 +1,14 @@
 call plug#begin('~/.vim/plugged')
 
-Plug 'neoclide/coc.nvim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'vim-airline/vim-airline'
 Plug 'morhetz/gruvbox'
 Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'mhinz/vim-startify'
-
+Plug 'vim-airline/vim-airline-themes'
+Plug 'scrooloose/nerdtree'
+Plug 'terryma/vim-multiple-cursors'
 call plug#end()
 
 "nvim outlook
@@ -15,6 +17,8 @@ set hidden
 set number
 set cmdheight=1
 syntax on
+"airline
+let g:airline_powerline_fonts = 1
 
 "functionality
 set mouse=a
@@ -29,21 +33,14 @@ set wrap
 colorscheme gruvbox
 set background=dark
 
-"wierdo shit keybinds
-"
-" i have to add something here sometime since i use traditional vi and haven't 
-" thought of any good keybinds for this shit, since i haven't wanted any or
-" made use of any, traditional vi ftw!
-
-" here is the binds i came up with for plugins and shit
 nmap <C-o> :Files<Cr>
-nmap <C-S-o> :Explore<Cr>
-
-
 
 "COC settings
 set updatetime=300
 set shortmess+=c
+
+"Nerdtree
+map <C-o> :NERDTreeToggle<CR>
 
 "vim-startify
 	
