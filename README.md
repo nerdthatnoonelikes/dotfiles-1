@@ -7,8 +7,8 @@ Most paths are currently defined as absolute paths, so you will likely need to c
 https://github.com/Lucy/tewi-font
 
 ### packages. <br>
-Gentoo <br> `emerge -a nitrogen alacritty termsyn polybar xmonad xmonad-contrib picom dmenu` <br> <br>
-Arch <br> `yay -S nitrogen alacritty misc-termsyn polybar xmonad xmonad-contrib picom dmenu`
+Gentoo <br> `emerge -a nitrogen alacritty termsyn polybar xmonad xmonad-contrib dmenu` <br> <br>
+Arch <br> `yay -S nitrogen alacritty misc-termsyn polybar xmonad xmonad-contrib dmenu`
 </div>
 
 
